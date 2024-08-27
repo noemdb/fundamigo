@@ -8,8 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @yield('styles')
 
@@ -26,7 +25,7 @@
 
     {{-- <div id="aside"> @yield('aside') </div> --}}
 
-    <div id="hero" class=""> @yield('hero') </div>
+    {{-- <div id="hero" class=""> @yield('hero') </div> --}}
     
     {{-- <div id="posts" class="p-1"> @yield('posts') </div> --}}
 

@@ -8,20 +8,25 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        {{-- <link rel="preconnect" href="https://fonts.bunny.net"> --}}
+        {{-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> --}}
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        <!-- Styles -->
+        @yield('styles')
+
+        <wireui:scripts />
+
         @livewireStyles
+
     </head>
+
     <body class="font-sans antialiased">
-        <x-banner />
 
         <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
+
+            @include('layouts.navigation')
 
             <!-- Page Heading -->
             @if (isset($header))
@@ -38,8 +43,9 @@
             </main>
         </div>
 
-        @stack('modals')
+        @yield('scripts')
 
         @livewireScripts
+
     </body>
 </html>

@@ -1,0 +1,207 @@
+php artisan make:livewire 'Post/IndexComponent'
+php artisan make:livewire 'User/IndexComponent'
+
+
+
+
+
+php artisan make:livewire 'Administracion/ExchangeRate/ListComponent'
+
+php artisan make:livewire 'Administracion/AssistControl/AssitAttendance/workerComponent'
+
+
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/MainComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/NavBarComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/NavContentComponent'
+
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/ListComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/IndexComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/NameComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/FormComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitSchedules/CreateComponent'
+
+
+php artisan make:livewire 'Administracion/AssistControl/AssitWeek/MainComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitWeek/NavBarComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitWeek/NavContentComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitWeek/FormComponent'
+
+
+php artisan make:livewire 'Administracion/AssistControl/AssitWeek/IndexComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitWeek/UpdateComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitWeek/NameComponent'
+
+php artisan make:livewire 'Administracion/AssistControl/AssitDay/IndexComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitDay/UpdateComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitDay/NameComponent'
+
+php artisan make:livewire 'Administracion/AssistControl/AssitDay/MainComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitDay/NavBarComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitDay/NavContentComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitDay/FormComponent'
+
+
+php artisan make:livewire 'Administracion/AssistControl/AssitTurn/IndexComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitTurn/UpdateComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitTurn/NameComponent'
+
+php artisan make:livewire 'Administracion/AssistControl/AssitHour/IndexComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitHour/UpdateComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitHour/NameComponent'
+
+php artisan make:livewire 'Administracion/AssistControl/AssitWorker/UpdateComponent'
+php artisan make:livewire 'Administracion/AssistControl/AssitWorker/NameComponent'
+
+
+php artisan make:livewire 'Academico/Mailer/IndexComponent'
+php artisan make:livewire 'Academico/Mailer/CreateComponent'
+php artisan make:livewire 'Academico/Mailer/EditComponent'
+php artisan make:livewire 'Academico/Mailer/DeleteComponent'
+
+
+php artisan make:livewire 'Administracion/Refund/IndexComponent'
+
+
+php artisan make:livewire 'Administracion/Mailer/IndexComponent'
+php artisan make:livewire 'Administracion/Mailer/CreateComponent'
+php artisan make:livewire 'Administracion/Mailer/EditComponent'
+php artisan make:livewire 'Administracion/Mailer/DeleteComponent'
+
+
+php artisan make:livewire 'Administracion/Bienestar/IndexComponent'
+
+
+php artisan make:livewire 'Bienestar/StudentRecord/IndexComponent'
+php artisan make:livewire 'Bienestar/Enrollment/IndexComponent'
+php artisan make:livewire 'Bienestar/Incident/IndexComponent'
+php artisan make:livewire 'Bienestar/IncidentAgreement/IndexComponent'
+php artisan make:livewire 'Bienestar/Estudiant/IndexComponent'
+php artisan make:livewire 'Bienestar/Interview/IndexComponent'
+php artisan make:livewire 'Bienestar/Overview/IndexComponent'
+php artisan make:livewire 'Bienestar/Description/IndexComponent'
+
+
+///////////////////////////////////////////////
+php artisan make:livewire 'Service/Payment/Button/Credicard/IndexComponent'
+
+
+php artisan make:livewire 'Profesor/Census/IndexComponent'
+
+
+php artisan make:livewire 'Administracion/CalendarEvent/ListComponent'
+
+
+
+php artisan make:livewire 'Administracion/Poll/IndexComponent'
+php artisan make:livewire 'Administracion/Poll/CreateComponent'
+php artisan make:livewire 'Administracion/Poll/EditComponent'
+php artisan make:livewire 'Administracion/Poll/DeleteComponent'
+
+php artisan make:livewire 'Administracion/Poll/Question/IndexComponent'
+php artisan make:livewire 'Administracion/Poll/Option/IndexComponent'
+
+php artisan make:livewire 'General/Poll/IndexComponent'
+php artisan make:livewire 'General/Poll/Component/AnswersComponet'
+php artisan make:livewire 'General/Poll/Component/QuestionsComponet'
+php artisan make:livewire 'General/Poll/Component/OptionsComponet'
+
+php artisan make:livewire 'General/Preinscripcion/IndexComponent'
+php artisan make:livewire 'General/Enrollment/IndexComponent'
+
+php artisan make:livewire 'Administracion/Enrollment/EditComponent'
+
+
+php artisan make:livewire 'Bot/IndexComponent'
+
+php artisan make:livewire 'Poll/IndexComponent'
+
+php artisan make:livewire 'Movile/Representant/IndexComponent'
+php artisan make:livewire 'Movile/Profesor/IndexComponent'
+php artisan make:livewire 'Movile/Profesor/Pevaluacion/IndexComponent'
+php artisan make:livewire 'Movile/Profesor/Evaluacion/IndexComponent'
+php artisan make:livewire 'Movile/Profesor/Incident/IndexComponent'
+php artisan make:livewire 'Movile/Profesor/Incident/CreateComponent'
+php artisan make:livewire 'Movile/Profesor/Incident/ItineraryComponent'
+php artisan make:livewire 'Movile/Profesor/Incident/TlineComponent'
+php artisan make:livewire 'Movile/Profesor/Reference/IndexComponent'
+php artisan make:livewire 'Movile/Evaluacion/IndexComponent'
+php artisan make:livewire 'Movile/Evaluacion/LessonComponent'
+php artisan make:livewire 'Movile/Evaluacion/PevaluacionComponent'
+
+
+php artisan make:livewire 'Administracion/Users/IndexComponent'
+php artisan make:livewire 'Representant/Users/IndexComponent'
+php artisan make:livewire 'Profesor/Users/IndexComponent'
+php artisan make:livewire 'Profesor/Incident/IndexComponent'
+php artisan make:livewire 'Profesor/Incident/IndexComponent'
+php artisan make:livewire 'Profesor/Incident/Agreement/IndexComponent'
+php artisan make:livewire 'Profesor/Incident/Interview/IndexComponent'
+php artisan make:livewire 'Profesor/Incident/Action/IndexComponent'
+
+
+php artisan make:livewire 'Catchment/IndexComponent'
+
+php artisan make:livewire 'General/Catchment/IndexComponent'
+php artisan make:livewire 'General/Catchment/RegisterComponent'
+php artisan make:livewire 'General/Catchment/InterviewComponent'
+
+php artisan make:livewire 'Evaluacion/Execution/IndexComponent'
+
+
+php artisan make:livewire 'Administracion/Cobranza/CollCalendar/IndexComponent'
+
+
+
+-------------------------------------InterViews-------------------------
+
+php artisan make:livewire 'General/Interview/IndexComponent'
+
+
+
+
+-------------------------------------Learning-------------------------
+
+
+php artisan make:controller 'Learning\LessonController'
+php artisan make:controller 'Learning\TeachingController'
+php artisan make:controller 'Learning\PedagogicalController'
+php artisan make:controller 'Learning\InstrumentController'
+php artisan make:controller 'Administracion\Tab\Configuracion\LeaderController'
+
+
+
+php artisan make:livewire 'Learning\LessonComponent'
+php artisan make:livewire 'Learning\LessonCreateComponent'
+php artisan make:livewire 'Learning\LessonListComponent'
+php artisan make:livewire 'Learning\TeachingComponent'
+php artisan make:livewire 'Learning\PedagogicalComponent'
+php artisan make:livewire 'Learning\InstrumentComponent'
+php artisan make:livewire 'Administracion\Tab\Configuracion\LeaderComponent'
+
+
+
+php artisan make:livewire 'Leader\LessonComponent'
+
+-----------------------------------------------------------------------------------
+
+php artisan make:livewire 'Profesor/SocialActions/IndexComponent'
+php artisan make:livewire 'Profesor/SocialActions/CommunityAction/IndexComponent'
+php artisan make:livewire 'Profesor/SocialActions/CommunityHour/IndexComponent'
+php artisan make:livewire 'Profesor/SocialActions/Calendar/IndexComponent'
+php artisan make:livewire 'Profesor/SocialActions/Itinerary/IndexComponent'
+
+
+
+-----------------------------------------------------------------------------------
+
+php artisan make:livewire 'Administracion/Blog/PostComponent'
+
+
+php artisan make:livewire 'Administracion/Educational/IndexComponent'
+php artisan make:livewire 'Administracion/Educational/DebateComponent'
+php artisan make:livewire 'Administracion/Educational/QuestionComponent'
+php artisan make:livewire 'Administracion/Educational/OptionComponent'
+
+
+
+php artisan make:livewire 'General/Educational/Competition/Debate/IndexComponent'

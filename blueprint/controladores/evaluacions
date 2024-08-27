@@ -1,0 +1,11 @@
+php artisan make:controller 'Evaluacion\HomeController'
+php artisan make:controller 'Evaluacion\Tab\AdministracionController'
+php artisan make:controller 'Evaluacion\Tab\ControlController'
+php artisan make:controller 'Evaluacion\Tab\AuditController'
+php artisan make:controller 'Evaluacion\Tab\UserController'
+php artisan make:controller 'Evaluacion\Tab\MailerController'
+
+php artisan make:controller 'Evaluacion\Tab\PaseController' --resource
+php artisan make:controller 'Evaluacion\Tab\AssitAttendanceController'
+php artisan make:controller 'Evaluacion\Tab\PevaluacionController'
+php artisan make:controller 'Evaluacion\Tab\LessonController'
