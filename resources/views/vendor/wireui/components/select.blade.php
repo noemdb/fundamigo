@@ -78,12 +78,12 @@
                                 <x-dynamic-component
                                     :component="WireUi::component('icon')"
                                     :name="$icon"
-                                    class="h-5 w-5 mr-1 text-gray-400 dark:text-gray-600"
+                                    class="h-5 w-5 mr-1 text-gray-400"
                                 />
                             @endif
 
                             <span
-                                class="truncate text-secondary-700 dark:text-secondary-400 text-sm"
+                                class="truncate text-secondary-700 text-sm"
                                 x-show="!isEmpty()"
                                 x-html="getSelectedDisplayText()">
                             </span>
@@ -97,13 +97,13 @@
                                     <x-dynamic-component
                                         :component="WireUi::component('icon')"
                                         :name="$icon"
-                                        class="h-5 w-5 text-gray-400 dark:text-gray-600"
+                                        class="h-5 w-5 text-gray-400"
                                     />
                                 @endif
 
                                 @if (!$withoutItemsCount)
                                     <span
-                                        class="inline-flex text-secondary-700 dark:text-secondary-400 text-sm"
+                                        class="inline-flex text-secondary-700 text-sm"
                                         x-show="selectedOptions.length"
                                         x-text="selectedOptions.length">
                                     </span>
@@ -114,7 +114,7 @@
                                         <span class="
                                                 inline-flex items-center py-0.5 pl-2 pr-0.5 rounded-full text-xs font-medium
                                                 border border-secondary-200 shadow-sm bg-secondary-100 text-secondary-700
-                                                dark:bg-secondary-700 dark:text-secondary-400 dark:border-none
+                                               
                                             ">
                                             <span style="max-width: 5rem" class="truncate" x-text="option.label"></span>
 
@@ -160,7 +160,7 @@
                             :component="WireUi::component('icon')"
                             class="w-5 h-5
                             {{ $name && $errors->has($name)
-                                ? 'text-negative-400 dark:text-negative-600'
+                                ? 'text-negative-400'
                                 : 'text-secondary-400'
                             }}"
                             :name="$rightIcon"
@@ -171,7 +171,7 @@
         </x-dynamic-component>
 
         @if ($hint)
-            <label @if ($id) for="{{ $id }}" @endif class="mt-2 text-sm text-secondary-500 dark:text-secondary-400">
+            <label @if ($id) for="{{ $id }}" @endif class="mt-2 text-sm text-secondary-500">
                 {{ $hint }}
             </label>
         @endif
@@ -207,7 +207,7 @@
             x-on:keydown.arrow-up.prevent="getPrevFocusable().focus()">
             <div class="w-full h-0.5 rounded-full relative overflow-hidden"
                 :class="{
-                    'bg-gray-200 dark:bg-gray-700': asyncData.fetching
+                    'bg-gray-200': asyncData.fetching
                 }">
                 <div class="bg-primary-500 h-0.5 rounded-full absolute animate-linear-progress"
                     style="width: 30%"
@@ -225,7 +225,7 @@
                 <template x-for="(option, index) in displayOptions" :key="`${index}.${option.value}`">
                     <li tabindex="-1" :index="index">
                         <div class="px-2 py-0.5">
-                            <div class="h-8 w-full animate-pulse bg-slate-200 dark:bg-slate-600 rounded"></div>
+                            <div class="h-8 w-full animate-pulse bg-slate-200 rounded"></div>
                         </div>
                     </li>
                 </template>
