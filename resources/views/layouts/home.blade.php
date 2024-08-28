@@ -23,38 +23,38 @@
 
     <div id="header"> @yield('header') </div>
 
+    <div id="hero" class=""> @yield('hero') </div>
+
     {{-- <div id="aside"> @yield('aside') </div> --}}
 
-    {{-- <div id="hero" class=""> @yield('hero') </div> --}}
     
-    {{-- <div id="posts" class="p-1"> @yield('posts') </div> --}}
+    <div id="posts" class="p-1"> @yield('posts') </div>
 
-    {{-- <div id="featured" class="p-1"> @yield('featured') </div> --}}
+    <div id="featured" class="p-1"> @yield('featured') </div>
 
-    {{-- <div id="objectives" class="p-1"> @yield('objectives') </div> --}}
+    <div id="objectives" class="p-1"> @yield('objectives') </div>
 
-    {{-- <div id="projects" class="p-1"> @yield('projects') </div> --}}
-
-    {{-- <div id="login" class="p-1"> @yield('login') </div> --}}
-
-    {{-- <div id="authority" class="p-1"> @yield('authority') </div> --}}
-
-    {{-- <div id="testimonials" class="p-1"> @yield('testimonials') </div> --}}
-
-    {{-- <div id="alliances" class="p-1"> @yield('alliances') </div> --}}
-
-    {{-- <div id="services" class="p-1"> @yield('services') </div> --}}
-
-    {{-- <div id="cta" class="p-1"> @yield('cta') </div> --}}
-
-    {{-- <div id="contacts" class="p-1"> @yield('contacts') </div> --}}
-
-    {{-- <div id="socials" class="p-1"> @yield('socials') </div> --}}
-
+    <div id="projects" class="p-1"> @yield('projects') </div>
 
     {{-- <div id="login" class="p-1"> @yield('login') </div> --}}
 
-    {{-- <div id="register" class="p-1"> @yield('register') </div> --}}
+    <div id="authority" class="p-1"> @yield('authority') </div>
+
+    <div id="testimonials" class="p-1"> @yield('testimonials') </div>
+
+    <div id="alliances" class="p-1"> @yield('alliances') </div>
+
+    <div id="services" class="p-1"> @yield('services') </div>
+
+    <div id="cta" class="p-1"> @yield('cta') </div>
+
+    <div id="contacts" class="p-1"> @yield('contacts') </div>
+
+    <div id="socials" class="p-1"> @yield('socials') </div>
+
+    <div id="login" class="p-1"> @yield('login') </div>
+
+    <div id="register" class="p-1"> @yield('register') </div>
 
     {{-- <div id="highlighted" class="p-1"> @yield('highlighted') </div> --}}
 
@@ -75,7 +75,7 @@
 
     {{-- <div id="container" class="p-1"> @yield('content') </div> --}}
 
-    {{-- <div id="footer"> @yield('footer') </div> --}}
+    <div id="footer"> @yield('footer') </div>
 
     {{-- @vite('resources/js/app.js') --}}
 

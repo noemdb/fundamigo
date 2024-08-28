@@ -1,5 +1,5 @@
 <!-- Container for demo purpose -->
-<div class="container my-2 mx-auto md:px-2">
+<div class="container-fluid my-2 px-2 md:px-2">
     <!-- Section: Design Block -->
     <section class="mb-2 text-center md:text-left">
         <h2 class="mb-2 text-center text-3xl font-bold border-b-2">Últimas publicaciones</h2>

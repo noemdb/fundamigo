@@ -1,5 +1,5 @@
 <!-- Container for demo purpose -->
-<div class="container my-2 mx-auto md:px-2 bg-gray-200 border rounded">
+<div class="container-fluid my-2 px-2 md:px-2 bg-gray-200 border rounded">
     <!-- Section: Design Block -->
     <section class="mb-2">
         <h2 class="mb-2 text-center text-xl lg:text-3xl font-bold">

@@ -1,58 +1,11 @@
 <div class="flex flex-col overflow-x-auto">
-    <div class="sm:-mx-6 lg:-mx-8">
-    {{-- <div class=""> --}}
-        <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+    {{-- <div class="sm:-mx-6 lg:-mx-8"> --}}
+    <div class="">
+        <div class="inline-block min-w-full py-2 sm:px-2 lg:px-4">
             <div class="overflow-x-auto">
-                <table class="min-w-full text-start text-sm font-light text-surface">
-                    <thead class="border-b border-neutral-200 font-medium">
-                        <tr>
-                            <th scope="col" class="px-6 py-4">#</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                            <th scope="col" class="px-6 py-4">Heading</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b border-neutral-200 hover:bg-neutral-100">
-                            <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                        </tr>
-                        <tr class="border-b border-neutral-200 hover:bg-neutral-100">
-                            <td class="whitespace-nowrap px-6 py-4 font-medium ">2</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4 ">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4 ">Cell</td>
-                        </tr>
-                        <tr class="border-b ">
-                            <td class="whitespace-nowrap px-6 py-4 hover:bg-neutral-100 font-medium ">3</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                            <td class="whitespace-nowrap px-6 py-4">Cell</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+                <livewire:post.index-component />
+
             </div>
         </div>
     </div>
