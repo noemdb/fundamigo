@@ -22,8 +22,13 @@ return new class extends Migration
             $table->smallInteger('weighting')->unsigned()->nullable()->comment('Ponderación');
             $table->enum('color_class', ['primary','secondary','positive','negative','warning','info','dark','white','black','slate','gray','zinc','neutral','stone','red','orange','amber','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'])->default('secondary')->comment('Color de la categoría');
             $table->boolean('status_hero')->default(false)->nullable()->comment('Disponible en hero');
-            $table->boolean('status_highlighted')->default(false)->nullable()->comment('Disponible en los destacados');
-            $table->boolean('status_aside')->default(false)->nullable()->comment('Disponible en el aside');
+            $table->boolean('status_posts')->default(false)->nullable()->comment('Disponible en últ. historias');
+            $table->boolean('status_featured')->default(false)->nullable()->comment('Disponible historias destacadas');
+            $table->boolean('status_projects')->default(false)->nullable()->comment('Disponible en Proyectos');
+            $table->boolean('status_teams')->default(false)->nullable()->comment('Disponible en Directivos');
+            $table->boolean('status_workers')->default(false)->nullable()->comment('Disponible en Equipo');
+            $table->boolean('status_testimonials')->default(false)->nullable()->comment('Disponible en testimonios');
+            $table->boolean('status_alliances')->default(false)->nullable()->comment('Disponible en Alianzas');
             $table->boolean('status_pinned')->default(false)->nullable()->comment('Anclado al inicio de la lista');
             $table->boolean('status_active')->default(false)->nullable()->comment('Activo');
             $table->boolean('status_published')->default(false)->nullable()->comment('Publicado');

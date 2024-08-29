@@ -36,8 +36,6 @@
 
     <div id="projects" class="p-1"> @yield('projects') </div>
 
-    {{-- <div id="login" class="p-1"> @yield('login') </div> --}}
-
     <div id="authority" class="p-1"> @yield('authority') </div>
 
     <div id="testimonials" class="p-1"> @yield('testimonials') </div>
