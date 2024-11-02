@@ -16,7 +16,9 @@ export default {
         './resources/views/**/*.blade.php',
         './vendor/wireui/wireui/resources/**/*.blade.php',
         './vendor/wireui/wireui/ts/**/*.ts',
-        './vendor/wireui/wireui/src/View/**/*.php'
+        './vendor/wireui/wireui/src/View/**/*.php',
+        "./src/**/*.{html,js}",
+        "./node_modules/tw-elements/js/**/*.js"
     ],
 
     theme: {
@@ -27,5 +29,5 @@ export default {
         },
     },
 
-    plugins: [forms, typography],
+    plugins: [forms, typography, require("tw-elements/plugin.cjs")],
 };

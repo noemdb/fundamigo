@@ -5,6 +5,6 @@
 
 import './bootstrap';
 
-import { Ripple, Collapse, initTWE } from "tw-elements";
+import { Ripple, Collapse,Tab, initTWE } from "tw-elements";
 
-initTWE({ Ripple, Collapse });
+initTWE({ Ripple, Collapse,Tab });
