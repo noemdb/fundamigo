@@ -9,8 +9,8 @@
 {{-- @section('alliances')  @include('home.alliances.main') @endsection --}}
 {{-- @section('services')  @include('home.services.main') @endsection --}}
 {{-- @section('cta')  @include('home.cta.main') @endsection --}}
-@section('contacts')  @include('home.contacts.main') @endsection
-@section('socials')  @include('home.socials.main') @endsection
+{{-- @section('contacts')  @include('home.contacts.main') @endsection --}}
+{{-- @section('socials')  @include('home.socials.main') @endsection --}}
 @section('login')  @include('home.login.main') @endsection
 {{-- @section('register')  @include('home.register.main') @endsection --}}
 {{-- @section('footer')  @include('home.footer.main') @endsection --}}

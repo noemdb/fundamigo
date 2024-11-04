@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Spatie\Permission\Models\Role;
+
+// $routeMiddleware = require base_path('routes/middleware.php');
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +21,19 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/users', function () {
-    return view('users');
-})->middleware(['auth', 'verified'])->name('users');
+// Route::get('/users', function () {
+//     return view('users');
+// })->middleware(['auth', 'role:Admin'])->name('users');
+
+Route::group(['middleware' => ['role:Admin']], function () {
+    Route::get('/users', function () {
+        return view('users');
+    })->name('users');
+});
+
+// Route::get('/users', function () {
+//     return view('users');
+// })->middleware(['auth', 'verified', 'role:Admin'])->name('users');
 
 Route::get('/posts', function () {
     return view('posts');

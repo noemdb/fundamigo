@@ -46,12 +46,13 @@
 
 <!--Tabs content-->
 <div>
-    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-        id="tabs-home3" role="tabpanel" data-twe-tab-active aria-labelledby="tabs-home-tab3">
+    <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block" id="tabs-home3" role="tabpanel" data-twe-tab-active aria-labelledby="tabs-home-tab3">
         @include('home.login.partials.login')
+        {{-- @include('auth.login') --}}
     </div>
-    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-        id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
-        @include('home.login.partials.singup')
+    <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
+        {{-- @include('home.login.partials.singup') --}}
+
+        <livewire:register  />
     </div>
 </div>

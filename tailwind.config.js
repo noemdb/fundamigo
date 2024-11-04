@@ -6,7 +6,7 @@ import typography from '@tailwindcss/typography';
 export default {
 
     presets: [
-        require('./vendor/wireui/wireui/tailwind.config.js')
+        require('./vendor/wireui/wireui/tailwind.config.js'),
     ],
     
     content: [

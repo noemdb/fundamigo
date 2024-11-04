@@ -2,7 +2,7 @@
 <div class="bg-gray-100 flex justify-center h-screen">
     <!-- Left: Image -->
     <div class="w-1/2 h-screen hidden lg:block">
-        <img src="{{asset('image/login/default.png')}}" alt="Placeholder Image" class="object-cover w-full h-full">
+        <img src="{{asset('image/login/register.png')}}" alt="Placeholder Image" class="object-cover w-full h-full">
     </div>
     <!-- Right: SingUp Form -->
     <div class="lg:p-24 md:p-48 sm:20 p-8 w-full lg:w-1/2 bg-success-100">
@@ -10,6 +10,12 @@
         <x-card padding="px-6 py-5 md:px-5">
 
             @slot('header') <h1 class="text-2xl font-semibold mb-2 p-4 text-center">Registro</h1> @endslot
+
+            <div id="logo_register" class="w-full sm:max-w-md px-6 py-2 mb-2 bg-blue-200 shadow-md overflow-hidden sm:rounded-lg">
+                <a href="/">
+                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                </a>
+            </div>
         
             <form action="#" method="POST">
                 <!-- Username Input -->

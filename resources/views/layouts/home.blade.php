@@ -20,6 +20,9 @@
 
 <body class="bg-white">
 
+    {{-- <x-notifications /> --}}
+    <x-notifications position="top-center" />
+
 
     <div id="header"> @yield('header') </div>
 
@@ -80,6 +83,8 @@
     @yield('scripts')
 
     @livewireScripts
+
+    @wireUiScripts
 
 </body>
 
