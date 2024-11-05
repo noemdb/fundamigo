@@ -16,7 +16,7 @@
                 <td class="whitespace-nowrap px-2 py-1">{{$item->description}}</td>           
                 <td class="whitespace-nowrap px-2 py-1">{{$item->category->name ?? null}}</td>           
                 <td class="whitespace-nowrap px-2 py-1 text-right">
-                    <x-button right-icon="plus" info label="Nuevo" wire:click="setModeEdit({{$item->id}})"/>
+                    <x-button right-icon="pencil" warning wire:click="setModeEdit({{$item->id}})"/>
                 </td>           
             </tr>
         @empty

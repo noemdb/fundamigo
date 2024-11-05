@@ -34,6 +34,7 @@ Route::group(['middleware' => ['verified']], function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::group(['middleware' => ['role:Admin']], function () {
+        
         Route::get('/users', function () {
             return view('users');
         })->name('users');
@@ -42,20 +43,11 @@ Route::group(['middleware' => ['verified']], function () {
             return view('posts');
         })->name('posts');
 
-        Route::middleware('auth')->group(function () {
-            Route::get('/posts/create', PostCreate::class)->name('posts.create');
-        });
+        Route::get('/posts/create', PostCreate::class)->name('posts.create');
+
     });
 
 });
 
-
-
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
 
 require __DIR__.'/auth.php';
