@@ -4,11 +4,11 @@ namespace App\Livewire\Post;
 
 use App\Models\app\Post;
 use App\Models\app\Post\Category;
-use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+use Livewire\Component;
 use WireUi\Traits\Actions;
 
-class Create extends Component
+class Edit extends Component
 {
     use Actions;
 
@@ -19,7 +19,7 @@ class Create extends Component
     public $color_class = 'secondary'; // Color por defecto
     public $status_active = false;     // Estado activo por defecto
     public $status_published = false;  // Estado publicado por defecto
-    public $categories;
+    public $categories,$post;
 
     // Reglas de validación para los campos
     protected function rules()
@@ -35,10 +35,10 @@ class Create extends Component
         ];
     }
 
-    public function mount()
+    public function mount($post_id)
     {
         $this->categories = Category::all();
-        $this->clearInputs();
+        $this->post = Post::findOrFail($post_id);
     }
 
     // Guardar el post
@@ -71,7 +71,7 @@ class Create extends Component
 
     public function render()
     {        
-        return view('livewire.post.create');
+        return view('livewire.post.edit');
     }
 
     public function clearInputs()

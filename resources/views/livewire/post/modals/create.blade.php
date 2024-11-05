@@ -1,8 +1,19 @@
 <x-modal wire:model.defer="modeCreate" blur max-width="sm">
+
     <x-card title="Crear post ...">
 
-        <livewire:post.create  />
-        {{-- post.create --}}
+        <form wire:submit.prevent="storePost">
+
+            @include('livewire.post.form.fields')
+
+            <!-- Submit Button -->
+            <x-primary-button class="w-full" type="submit">
+                {{ __('Guardar') }}
+            </x-primary-button>
+            
+        </form>
+        
 
     </x-card>
+
 </x-modal>
