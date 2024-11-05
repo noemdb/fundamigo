@@ -20,8 +20,7 @@
 
         <x-card padding="px-6 py-5 md:px-5">
 
-            @slot('header') <h1 class="text-2xl font-semibold mb-2 p-4 text-center">Registro</h1> @endslot
-            
+            @slot('header') <h1 class="text-2xl font-semibold mb-2 p-4 text-center">Registro</h1> @endslot            
         
             <form wire:submit.prevent="register">
                 <!-- name Input -->

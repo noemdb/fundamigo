@@ -40,9 +40,7 @@ class SuccessfulRegistration extends Notification
                     ->line('Tu cuenta ha sido creada exitosamente y ya puedes iniciar sesión.')
                     ->action('Ir a la Plataforma', url('/'))
                     ->line('¡Gracias por unirte a nosotros!');
-    }
-
-    
+    }    
 
     /**
      * Get the array representation of the notification.
