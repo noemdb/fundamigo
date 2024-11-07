@@ -5,6 +5,7 @@ php artisan make:model 'app\Post\Category' -m &&
 php artisan make:model 'app\Post\Comment' -m &&
 php artisan make:model 'app\Post\PostImage' -m &&
 php artisan make:model 'app\Post\PostFile' -m
+php artisan make:model 'Profile' -m
 
 
 _____________________________________________________________________________________________
