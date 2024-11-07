@@ -1,5 +1,7 @@
 <x-modal wire:model.defer="modeEdit" blur max-width="sm">
 
+    <x-errors />
+
     <x-card title="Actualizar post ...">
 
         <form wire:submit.prevent="updatePost">

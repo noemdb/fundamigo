@@ -8,7 +8,7 @@
             <img src="{{asset('image/login/green.png')}}" alt="Placeholder Image" class="object-cover w-full h-full">
             <div class="absolute inset-0 flex items-center justify-center px-2">
                 <p class="text-white text-2xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">
-                    Accede a nuestro contenido y personaliza tu experiencia. Únete a nuestra comunidad para recibir nuestra. No te pierdas la oportunidad de formar parte de algo especial. ¡Regístrate hoy mismo y comienza a explorar!
+                    Accede a nuestro contenido y personaliza tu experiencia. Únete a nuestra fundación para recibir nuestra. No te pierdas la oportunidad de formar parte de algo especial. ¡Regístrate hoy mismo y comienza a explorar!
                 </p>
             </div>
         </div>

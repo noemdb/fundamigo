@@ -24,12 +24,13 @@ class PostCreate extends Component
     // Reglas de validación para los campos
     protected function rules()
     {
+        $class_color = implode(",",Post::COLORS);
         return [
             'title' => 'required|string|max:255',
             'description' => 'nullable|string|max:255',
             'body' => 'required|string',
             'category_id' => 'required|exists:categories,id',
-            'color_class' => 'required|in:primary,secondary,positive,negative,warning,info,dark,white,black,slate,gray,zinc,neutral,stone,red,orange,amber,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose',
+            'color_class' => 'required|in:'.$class_color,
             'status_active' => 'boolean|nullable',
             'status_published' => 'boolean|nullable',
         ];
@@ -40,12 +41,10 @@ class PostCreate extends Component
         $this->categories = Category::all();
         $this->clearInputs();
     }
-
-    // Guardar el post
+    
     public function storePost()
     {
-        $this->validate(); // Validar datos
-
+        $this->validate(); 
         Post::create([
             'user_id' => Auth::id(),
             'category_id' => $this->category_id,
@@ -56,17 +55,13 @@ class PostCreate extends Component
             'status_active' => $this->status_active,
             'status_published' => $this->status_published,
         ]);
-
         $this->notification([
             'title'       => 'Post Guardado',
             'description' => 'Excelecte!!! la información fue almacenada con éxito.',
             'icon'        => 'success'
         ]);
-
         $this->clearInputs();
-
-        $this->dispatch('post-created');       
-
+        $this->dispatch('post-created');
     }
 
     public function render()

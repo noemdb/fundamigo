@@ -1,5 +1,7 @@
 <x-modal wire:model.defer="modeCreate" blur max-width="sm">
 
+    <x-errors />
+
     <x-card title="Crear post ...">
 
         <form wire:submit.prevent="storePost">

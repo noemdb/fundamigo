@@ -10,9 +10,10 @@
 
         <div class="relative w-full">
             <img src="{{asset('image/login/blue.png')}}" alt="Placeholder Image" class="object-cover w-full h-full">
+            {{-- <div class="absolute inset-0 text-3xl text-center text-white font-bold">Inicia Sesión</div> --}}
             <div class="absolute inset-0 flex items-center justify-center px-2">
                 <p class="text-white text-2xl font-bold bg-black bg-opacity-50 p-4 rounded-lg">
-                    Inicia sesión y accede, personaliza tus preferencias y forma parte de nuestra comunidad. Aquí, tus ideas cuentan y tu experiencia se transforma.
+                    Inicia sesión y accede, personaliza tus preferencias y forma parte de nuestra fundación. Aquí, tus ideas cuentan y tu experiencia se transforma.
                 </p>
             </div>
         </div>

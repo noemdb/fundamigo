@@ -53,7 +53,7 @@
                         Juntos, podemos marcar <br /><span class="text-[hsl(219,34%,17%)]">la diferencia en la educación</span>
                     </h1>
                     <p class="opacity-70 text-[hsl(214,5%,25%)]">
-                        En <strong>FUNDAMIGO</strong>, sabemos que la educación es una responsabilidad compartida. Con tu apoyo, podemos marcar la diferencia en la vida de nuchos de estudiantes, integrandonos para proporcionar una educación de calidad y preparándolos para enfrentar los desafíos del futuro. Únete a nuestra comunidad comprometida
+                        En <strong>FUNDAMIGO</strong>, sabemos que la educación es una responsabilidad compartida. Con tu apoyo, podemos marcar la diferencia en la vida de nuchos de estudiantes, integrandonos para proporcionar una educación de calidad y preparándolos para enfrentar los desafíos del futuro. Únete a nuestra fundación comprometida
                     </p>
                 </div>
                 <div class="relative mb-12 lg:mb-0">

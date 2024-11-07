@@ -23,10 +23,11 @@
                 <td class="whitespace-nowrap px-2 py-1">{{ ($item->status_published) ? 'SI' : 'NO'}}</td>           
                 <td class="whitespace-nowrap px-2 py-1">
                     @php $image = $item->file_url; @endphp
-                    @if ($image) <img src="{{ $image }}"> @endif    
+                    @if ($image) <x-avatar squared xl src="{{$image}}" /> @endif    
                 </td>           
                 <td class="whitespace-nowrap px-2 py-1 text-right">
                     <x-button right-icon="pencil" warning wire:click="setModeEdit({{$item->id}})"/>
+                    <x-button right-icon="trash" negative wire:click="remove({{$item->id}})"/>
                 </td>           
             </tr>
         @empty
