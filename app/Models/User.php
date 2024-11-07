@@ -68,4 +68,14 @@ class User extends Authenticatable implements MustVerifyEmail
     public function getProfilePhotoUrlAttribute(){
         return null;
     }
+
+    public function profile()
+    {
+        return $this->hasOne(Profile::class,'user_id');
+    }
+
+    public function getImageAttribute()
+    {
+        return optional($this->profile)->image;
+    }
 }

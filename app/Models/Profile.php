@@ -10,20 +10,57 @@ class Profile extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'first_name',
         'last_name',
+        'image',
         'identity_document',
         'profession',
         'occupation',
         'areas_of_expertise',
         'specializations',
-        'email',
         'phone',
         'address',
         'birthdate',
-        'role',
         'status',
     ];
+
+    const EXPERTISE = [
+        'Álgebra',
+        'Astronomía',
+        'Artística',
+        'Biología',
+        'Cálculo',
+        'Ciencias Ambientales',
+        'Ciencias Políticas',
+        'Ciberseguridad',
+        'Comercio',
+        'Comunicación Científica',
+        'Desarrollo de Software',
+        'Diseño e Innovación',
+        'Educación Especial',
+        'Educación Física',
+        'Educación Inicial',
+        'Emprendimiento Tecnológico',
+        'Estadística',
+        'Ética en la Tecnología',
+        'Física',
+        'Geometría',
+        'Historia',
+        'Idiomas',
+        'Ingeniería Civil',
+        'Ingeniería Eléctrica',
+        'Ingeniería Mecánica',
+        'Ingeniería Química',
+        'Ingeniería [Otra]',
+        'Informática',
+        'Inteligencia Artificial',
+        'Matemáticas',
+        'Medicina',
+        'Música',
+        'Química',
+        'Robótica',
+    ]; 
 
     /**
      * The attributes that should be cast.
@@ -39,7 +76,7 @@ class Profile extends Model
      */
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class,'user_id');
     }
 
     /**

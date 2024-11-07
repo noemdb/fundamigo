@@ -49,5 +49,4 @@ Route::group(['middleware' => ['verified']], function () {
 
 });
 
-
 require __DIR__.'/auth.php';
