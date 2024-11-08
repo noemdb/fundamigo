@@ -1,6 +1,6 @@
 <!-- Main navigation container -->
 <nav
-    class="flex-no-wrap relative flex w-full items-center justify-between bg-indigo-500 py-2 shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4">
+    class="flex-no-wrap relative flex w-full items-center justify-between bg-[hsl(218,81%,50%)] py-2 shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4">
     <div class="flex w-full flex-wrap items-center justify-between px-3">
         <!-- Hamburger button for mobile view -->
         @include('home.header.partials.hamburger') 
@@ -23,7 +23,7 @@
                         <!-- Icon -->
                         @include('home.header.partials.icons')
                         <!-- First dropdown container -->
-                        @include('home.header.partials.dropdownNotify') 
+                        {{-- @include('home.header.partials.dropdownNotify')  --}}
                         <!-- Second dropdown container -->
                         @include('home.header.partials.dropdownUser')
                     @else

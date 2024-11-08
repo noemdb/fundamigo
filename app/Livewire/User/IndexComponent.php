@@ -26,7 +26,7 @@ class IndexComponent extends Component
 
     public function render()
     {
-        $users = User::select('users.*')->join('profiles', 'users.id', '=', 'profiles.user_id');
+        $users = User::select('users.*')->leftjoin('profiles', 'users.id', '=', 'profiles.user_id');
         $users = ($this->expertise) ? $users->where('profiles.areas_of_expertise',$this->expertise) : $users ;
         $users = $users->paginate(10);
         return view('livewire.user.index-component',[

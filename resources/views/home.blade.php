@@ -1,6 +1,6 @@
 @extends('layouts.home')
-{{-- @section('header')  @include('home.header.main') @endsection --}}
-{{-- @section('hero')  @include('home.hero.main') @endsection --}}
+@section('header') @include('home.header.main') @endsection
+@section('hero') @include('home.hero.main') @endsection
 {{-- @section('posts')  @include('home.posts.main') @endsection --}}
 {{-- @section('featured')  @include('home.featured.main') @endsection --}}
 {{-- @section('projects')  @include('home.projects.main') @endsection --}}

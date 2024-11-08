@@ -5,7 +5,6 @@
 </h3>
 
 <x-card shadow>
-    {{-- @include('home.login.partials.form') --}}
     @include('home.login.partials.tabs')
 </x-card>
 

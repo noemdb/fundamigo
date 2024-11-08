@@ -18,12 +18,6 @@
                     </x-nav-link>
                 </div>
 
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('profiles')" :active="request()->routeIs('profiles')">
-                        {{ __('Perfil') }}
-                    </x-nav-link>
-                </div> --}}
-
                 @hasrole('Admin')
                     <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                         <x-nav-link :href="route('users')" :active="request()->routeIs('users')">
@@ -57,7 +51,6 @@
                     <x-dropdown.item separator>
                         <div class="font-bold">{{Auth::user()->name}}</div> 
                     </x-dropdown.item>
-                 
                     <x-dropdown.item label="Mi Perfil" href="{{ route('profile.edit') }}"/>
 
                     <x-dropdown.item separator>        
@@ -70,7 +63,6 @@
                     </x-dropdown.item>
 
                 </x-dropdown>
-               
                 
             </div>
 
