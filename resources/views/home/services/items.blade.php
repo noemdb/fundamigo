@@ -25,9 +25,69 @@
         </div>
 
         <div class="grid px-6 md:px-12 lg:grid-cols-3 xl:px-32" style="margin-top: -200px">
+
+            <!-- Membresía Básica -->
+            <div class="p-0 py-2 mx-2">
+                <div class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] lg:rounded-tr-none lg:rounded-br-none">
+                    <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center">
+                        <p class="mb-4 text-sm uppercase"><strong>Membresía Básica</strong></p>
+                        <h3 class="mb-6 text-3xl"><strong>$ 25</strong><small class="text-base text-neutral-500">/Año</small></h3>
+                        <button type="button" class="inline-block w-full rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-ripple-init data-te-ripple-color="light">Suscribir</button>
+                    </div>
+                    <div class="p-6">
+                        <ol class="list-inside">
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Boletines informativos</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Acceso a eventos comunitarios</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Reconocimiento como miembro</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membresía Colaborativa -->
+            <div class="p-0 py-2 mx-2">
+                <div class="block h-full bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+                    <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center">
+                        <p class="mb-4 text-sm uppercase"><strong>Membresía Colaborativa</strong></p>
+                        <h3 class="mb-6 text-3xl"><strong>$ 500</strong><small class="text-base text-neutral-500">/Año</small></h3>
+                        <button type="button" class="inline-block w-full rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-ripple-init data-te-ripple-color="light">Suscribir</button>
+                    </div>
+                    <div class="p-6">
+                        <ol class="list-inside">
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Boletines y actualizaciones</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Participación en mesas de trabajo</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Oportunidad de patrocinio</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Reconocimiento como aliado</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Acceso a eventos exclusivos</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membresía Visionaria -->
+            <div class="p-0 py-2 mx-2">
+                <div class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] lg:rounded-tl-none lg:rounded-bl-none">
+                    <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center">
+                        <p class="mb-4 text-sm uppercase"><strong>Membresía Visionaria</strong></p>
+                        <h3 class="mb-6 text-3xl"><strong>$ 1,000+</strong><small class="text-base text-neutral-500">/Año</small></h3>
+                        <button type="button" class="inline-block w-full rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200" data-te-ripple-init data-te-ripple-color="light">Suscribir</button>
+                    </div>
+                    <div class="p-6">
+                        <ol class="list-inside">
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Todos los beneficios de la Membresía Colaborativa</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Participación en el Consejo Asesor</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Informe anual personalizado</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Oportunidad de patrocinio de programas</li>
+                            <li class="mb-4 flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-5 w-5 text-primary"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Acceso prioritario a eventos exclusivos</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            @php /* @endphp
+
             <div class="p-0 py-2">
-                <div
-                    class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] lg:rounded-tr-none lg:rounded-br-none">
+                <div class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] lg:rounded-tr-none lg:rounded-br-none">
                     <div
                         class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center">
                         <p class="mb-4 text-sm uppercase">
@@ -35,7 +95,7 @@
                         </p>
                         <h3 class="mb-6 text-3xl">
                             <strong>$ 129</strong>
-                            <small class="text-base text-neutral-500">/year</small>
+                            <small class="text-base text-neutral-500">/Año</small>
                         </h3>
 
                         <button type="button"
@@ -82,7 +142,7 @@
                         </p>
                         <h3 class="mb-6 text-3xl">
                             <strong>$ 499</strong>
-                            <small class="text-base text-neutral-500">/year</small>
+                            <small class="text-base text-neutral-500">/Año</small>
                         </h3>
 
                         <button type="button"
@@ -156,7 +216,7 @@
                         </p>
                         <h3 class="mb-6 text-3xl">
                             <strong>$ 299</strong>
-                            <small class="text-base text-neutral-500">/year</small>
+                            <small class="text-base text-neutral-500">/Año</small>
                         </h3>
 
                         <button type="button"
@@ -205,6 +265,10 @@
                     </div>
                 </div>
             </div>
+
+            @php */ @endphp
+
+
         </div>
     </section>
     <!-- Section: Design Block -->

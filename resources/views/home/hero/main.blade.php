@@ -44,8 +44,9 @@
 <section class="background-radial-gradient-hero mb-2 overflow-hidden">
     
     <!-- Jumbotron -->
-    <div class="px-6 py-12 text-center md:px-12 lg:py-24 lg:text-left rounded-sm shadow-sm">
-        <div class="w-100 mx-auto text-neutral-800 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+    <div class="px-2 py-12 text-center md:px-6 lg:py-24 lg:text-left rounded-sm shadow-sm">
+        {{-- <div class="w-100 mx-auto text-neutral-800 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl"> --}}
+        <div class="w-100 mx-auto text-neutral-800 ">
             <div class="grid items-center gap-12 lg:grid-cols-2">
 
                 <div class="mt-12 lg:mt-0 backdrop-blur-sm bg-white/30 p-4 rounded" style="z-index: 10">

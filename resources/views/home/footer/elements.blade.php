@@ -21,16 +21,17 @@
         Membresias
     </h6>
     <p class="mb-4">
-        <a href="#services" class="text-green-100">Mensual</a>
+        <a href="#services" class="text-green-100">Básica</a>
     </p>
     <p class="mb-4">
-        <a href="#services" class="text-green-100">Semestral</a>
+        <a href="#services" class="text-green-100">Colaborativa</a>
     </p>
     </p>
     <p class="mb-4">
-        <a href="#services" class="text-green-100">Anual</a>
+        <a href="#services" class="text-green-100">Visionaria</a>
     </p>
 </div>
+
 <!-- Useful links section -->
 <div class="">
     <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">

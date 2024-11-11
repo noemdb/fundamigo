@@ -1,6 +1,6 @@
 <!-- Container for demo purpose -->
-<div class="container my-2 mx-auto md:px-2 bg-gray-200">
-    <h2 class="mb-2 text-center text-3xl font-bold">¡Únete a FUNDAMIGO</h2>
+<div class="container-fluid my-2 py-8 mx-auto md:px-2 bg-gray-200">
+    <h2 class="mb-2 text-center text-5xl font-bold">¡Únete a FUNDAMIGO!</h2>
     <p class="mb-2 text-center ">Y sé parte del cambio en la educación! Hay varias formas en las que puedes contribuir y marcar la diferencia:</p>
     <!-- Section: Design Block -->
     <section class="mb-2 text-center lg:text-left">
@@ -45,15 +45,9 @@
                                                 Subscrite
                                             </button>
                                         </div>
-                                        <p class="text-neutral-400 mt-2"><small
-                                                class="text-muted">By subscribing you agree to receive the newsletter
-                                                &amp;
-                                                commercial information from the data administrator StartupFlow s.c.
-                                                <span class="d-none d-md-inline-block">Kijowska 7,
-                                                    Warsaw.</span><a class="text-info"
-                                                    href="https://mdbootstrap.com/general/privacy-policy/"
-                                                    target="_blank">
-                                                    Policy</a></small></p>
+                                        <p class="text-neutral-400 mt-2">
+                                            <small class="text-muted"> Al suscribirte, aceptas recibir el boletín informativo </small>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

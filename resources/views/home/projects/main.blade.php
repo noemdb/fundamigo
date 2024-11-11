@@ -1,7 +1,7 @@
 <!-- Container for demo purpose -->
 <div class="container my-2 mx-auto md:px-6 bg-gray-200">
     <!-- Section: Design Block -->
-    <section class="mb-2">
+    <section class="mx-2 md:my-6">
         <div class="flex justify-center">
             <div class="max-w-[700px] text-center">
                 <p class="mb-6 font-bold uppercase text-primary">

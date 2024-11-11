@@ -1,8 +1,8 @@
 <!-- Container for demo purpose -->
 <div class="container-fluid my-2 px-2 md:px-2 bg-gray-200 border rounded">
     <!-- Section: Design Block -->
-    <section class="mb-2">
-        <h2 class="mb-2 text-center text-xl lg:text-3xl font-bold">
+    <section class="mx-2 md:my-6">
+        <h2 class="my-6 text-center text-xl lg:text-3xl font-bold">
             Nuestras carácteristicas más destacadas?
         </h2>
 

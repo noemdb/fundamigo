@@ -27,7 +27,9 @@ Route::get('/', function () {
         'projects'=>Post::where('status_projects',true)->orderBy('created_at','desc')->limit(8)->get(),
         'authorities'=>Post::where('status_teams',true)->orderBy('created_at','desc')->limit(4)->get(),
         'workers'=>Post::where('status_workers',true)->orderBy('created_at','desc')->limit(4)->get(),
-        'testimonials'=>Post::where('status_testimonials',true)->orderBy('created_at','desc')->limit(4)->get(),
+        'testimonials'=>Post::where('status_testimonials',true)->orderBy('created_at','desc')->limit(3)->get(),
+        'alliances'=>Post::where('status_alliances',true)->orderBy('created_at','desc')->limit(3)->get(),
+        'alliances'=>Post::where('status_alliances',true)->orderBy('created_at','desc')->limit(3)->get(),
     ]);
 })->name('home');
 

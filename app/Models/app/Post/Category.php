@@ -94,3 +94,15 @@ class Category extends Model
         return ($category) ? Post::public()->where('category_id',3)->limit($limit)->orderBy('created_at','desc')->get() : collect();
     }
 }
+
+/*
+Comunidad Amigoniana
+Programas Educativos
+Proyectos de Infraestructura
+Eventos y Actividades
+Oportunidades de Voluntariado
+Becas y Ayuda Social
+Noticias y Actualizaciones
+Desarrollo Profesional
+Colaboraciones y Networking
+*/
