@@ -3,24 +3,28 @@
     <section class="mb-2 text-center">
 
         <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-            <div class=" mb-12 md:mb-0 bg-green-100">
-                <div class="mb-6 flex justify-center">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
-                        class="w-32 rounded-full shadow-lg" />
+
+            @forelse ($testimonials as $item)
+                <div class=" mb-12 md:mb-0 bg-green-100">
+                    <div class="mb-6 flex justify-center">
+                        <img src="{{$item->file_url}}"
+                            class="w-32 rounded-full shadow-lg" />
+                    </div>
+                    <div>
+                        {!! $item->body !!}
+                    </div>
+                    <h5 class="mb-2 text-lg font-bold">{{$item->title}}</h5>
+                    <h6 class="mb-0 font-medium text-primary">{{$item->description}}</h6>
+                    <p class="text-sm mb-2">
+                        {{-- {!!$item->svg!!} --}}
+                    </p>
+                    @include('svg.starts')
                 </div>
-                <h5 class="mb-2 text-lg font-bold">Laura Torres</h5>
-                <h6 class="mb-0 font-medium text-primary">
-                    Beneficiaria de un programa de <strong>FUNDAMIGO</strong>
-                </h6>
-                <p class="text-sm mb-2">
-                    Gracias a <strong>FUNDAMIGO</strong>, mi vida dio un giro de 180 grados. Recibí una beca que me permitió acceder a una educación de calidad que de otro modo no hubiera sido posible. El apoyo financiero y el acompañamiento constante de <strong>FUNDAMIGO</strong>me motivaron a esforzarme al máximo y lograr mis metas académicas. Hoy en día, soy la primera de mi familia en cursar la universidad y estoy segura de que mi futuro será prometedor, gracias al apoyo incondicional de <strong>FUNDAMIGO</strong>.
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-                        <path fill="currentColor"
-                            d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-                    </svg>
-                </p>
-                @include('svg.starts')
-            </div>
+            @empty
+            <div>no hay posts registrados en esta section</div>
+            @endforelse            
+
+            @php /* @endphp
             <div class=" mb-12 md:mb-0 bg-green-100">
                 <div class="mb-6 flex justify-center">
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
@@ -57,6 +61,8 @@
                 </p>
                 @include('svg.starts')
             </div>
+            @php */ @endphp
+
         </div>
 
     </section>

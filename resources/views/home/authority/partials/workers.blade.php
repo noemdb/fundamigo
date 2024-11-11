@@ -7,14 +7,23 @@
         </h2>
 
         <div class="lg:gap-xl-12 grid gap-x-6 md:grid-cols-3 xl:grid-cols-4">
-            <div class="mb-3 border rounded  bg-green-100">
-                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.jpg"
-                    class="mx-auto mb-0 rounded-full shadow-lg" alt="" style="max-width: 100px" />
 
-                <p class="mb-0 font-bold">Carlos Gómez</p>
-                <p class="text-neutral-500 text-sm">Director de Comunicaciones</p>
-            </div>
+            @forelse ($workers as $item)
+                <div class="mb-3 border rounded  bg-green-100">
+                    <img src="{{$item->file_url}}" class="mx-auto mb-0 rounded-full shadow-lg" alt="" style="max-width: 100px" />
 
+                    <p class="mb-0 font-bold">
+                        {!!$item->body!!}
+                    </p>
+
+                    {{-- <p class="mb-0 font-bold">Carlos Gómez</p> --}}
+                    {{-- <p class="text-neutral-500 text-sm">Director de Comunicaciones</p> --}}
+                </div>
+            @empty
+            <div>No hay trabajadores registrados</div>
+            @endforelse
+            
+            @php /* @endphp
             <div class="mb-3 border rounded  bg-green-100">
                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/5.jpg"
                     class="mx-auto mb-0 rounded-full shadow-lg" alt="" style="max-width: 100px" />
@@ -99,6 +108,7 @@
                 <p class="mb-0 font-bold">Carolina González</p>
                 <p class="text-neutral-500 text-sm">Especialista en Educación Inclusiva</p>
             </div>
+            @php */ @endphp
         </div>
     </section>
     <!-- Section: Design Block -->

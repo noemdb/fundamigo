@@ -17,23 +17,38 @@
         </div>
 
         <div class="grid gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-12">
-            <div class="mb-12">
-                <div class="flex">
-                    <div class="shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="mr-3 h-5 w-5 text-success">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <div class="ml-2 grow">
-                        <p class="mb-1 font-bold">Programa de becas educativas</p>
-                        <p class="text-neutral-500">
-                            Poporciona becas a estudiantes con dificultades económicas, brindándoles la oportunidad de acceder a una educación de calidad.
-                        </p>
+            @forelse ($projects as $item)
+                <div class="mb-12">
+                    <div class="flex">
+                        <div class="shrink-0">
+                            {!!$item->svg!!}
+                        </div>
+                        <div class="ml-2 grow">
+                            <p class="mb-1 font-bold">{{$item->title}}</p>
+                            <div class="text-neutral-700 pb-2">{!! $item->description !!}</div>
+
+                            <p class="text-neutral-400">
+                                <div x-data="{ expandido: false }">
+                                    <div :class="{ 'contenido': !expandido, 'expandido': expandido }">
+                                        {!! $item->body !!}
+                                    </div>
+                                    <a href="#" @click.prevent="expandido = !expandido">
+                                        <span class="font-bold" x-text="expandido ? 'Mostrar menos' : 'Mostrar más'"></span>
+                                    </a>
+                                </div>
+                            </p>                            
+                            
+                            {{-- <p class="text-neutral-500">
+                                Poporciona becas a estudiantes con dificultades económicas, brindándoles la oportunidad de acceder a una educación de calidad.
+                            </p> --}}
+                        </div>
                     </div>
                 </div>
-            </div>
+            @empty
+                <div>No hay proyestos</div>
+            @endforelse
+
+            @php /* @endphp            
 
             <div class="mb-12">
                 <div class="flex">
@@ -232,6 +247,8 @@
                     </div>
                 </div>
             </div>
+
+            @php */ @endphp
 
         </div>
     </section>

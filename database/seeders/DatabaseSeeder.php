@@ -21,5 +21,9 @@ class DatabaseSeeder extends Seeder
         $this->call(CategoryLanding::class);
         $this->call(PostCategoryN1Seeder::class);
         $this->call(PostCategoryN2Seeder::class);
+        $this->call(PostCategoryN3Seeder::class);
+        $this->call(PostCategoryN4Seeder::class);
+        $this->call(PostCategoryN5Seeder::class);
+        $this->call(PostCategoryN6Seeder::class);
     }
 }

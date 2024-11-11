@@ -24,6 +24,10 @@ Route::get('/', function () {
     return view('home',[
         'posts'=>Post::where('status_posts',true)->orderBy('created_at','desc')->limit(4)->get(),
         'featureds'=>Post::where('status_featured',true)->orderBy('created_at','desc')->limit(4)->get(),
+        'projects'=>Post::where('status_projects',true)->orderBy('created_at','desc')->limit(8)->get(),
+        'authorities'=>Post::where('status_teams',true)->orderBy('created_at','desc')->limit(4)->get(),
+        'workers'=>Post::where('status_workers',true)->orderBy('created_at','desc')->limit(4)->get(),
+        'testimonials'=>Post::where('status_testimonials',true)->orderBy('created_at','desc')->limit(4)->get(),
     ]);
 })->name('home');
 
