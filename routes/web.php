@@ -6,6 +6,7 @@ use Spatie\Permission\Models\Role;
 use App\Livewire\PostCreate;
 use App\Models\app\Post;
 use App\Models\app\Post\Category;
+use Livewire\Livewire;
 
 // $routeMiddleware = require base_path('routes/middleware.php');
 
@@ -61,3 +62,11 @@ Route::group(['middleware' => ['verified']], function () {
 });
 
 require __DIR__.'/auth.php';
+
+Livewire::setScriptRoute(function ($handle) {
+    return Route::get('/fundamigo/livewire/livewire.js', $handle);
+});
+
+Livewire::setUpdateRoute(function ($handle) {
+    return Route::post('/fundamigo/livewire/update', $handle);
+});
