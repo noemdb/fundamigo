@@ -3,6 +3,7 @@
 namespace App\Models\app\Post;
 
 use App\Models\app\Post;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -85,5 +86,11 @@ class Category extends Model
         };
         // return $path.$icon;
         return $svg;
+    }
+
+    public static function getPosts($category,$limit=4) : Collection
+    {
+        $category = Category::where('name', $category)->first();        
+        return ($category) ? Post::public()->where('category_id',3)->limit($limit)->orderBy('created_at','desc')->get() : collect();
     }
 }

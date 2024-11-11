@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Role;
 use App\Livewire\PostCreate;
+use App\Models\app\Post;
+use App\Models\app\Post\Category;
 
 // $routeMiddleware = require base_path('routes/middleware.php');
 
@@ -19,7 +21,10 @@ use App\Livewire\PostCreate;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home',[
+        'posts'=>Post::where('status_posts',true)->orderBy('created_at','desc')->limit(4)->get(),
+        'featureds'=>Post::where('status_featured',true)->orderBy('created_at','desc')->limit(4)->get(),
+    ]);
 })->name('home');
 
 

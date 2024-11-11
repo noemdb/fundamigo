@@ -11,32 +11,39 @@ class Post extends Model
 {
     use HasFactory;
 
-    const COLORS = ['primary','secondary','positive','negative','warning','info','dark','white','black','slate','gray','zinc','neutral','stone','red','orange','amber','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'];
+    const COLORS = ['primary','secondary','positive','success','negative','warning','info','dark','white','black','slate','gray','zinc','neutral','stone','red','orange','amber','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'];
 
     protected $dates = ['created_at','updated_at','deleted_at'];
 
     protected $fillable = [
-        'user_id','icon','category_id','title','description','body','file_url','order','created_at','status_priority','status_feature','status_coverPage',
-        'status_pinned','status_banned','status_active','status_published','status_help'
+        'user_id','category_id','title','description','body','file_url','order','weighting','color_class','svg',
+        'status_hero','status_posts','status_featured','status_projects','status_teams','status_workers','status_testimonials','status_alliances',
+        'status_pinned','status_active','status_published','status_help',
     ];
 
     const COLUMN_COMMENTS = [
         'user_id'=>'Autor',
-        'icon'=>'Icono',
         'category_id'=>'Categoría',
         'title'=>'Título',
-        'description'=>'Descripción',
-        'body'=>'Texto',
+        'description'=>'Descripción del Post',
+        'body'=>'DeTexto',
         'file_url'=>'Archivo adjunto',
         'order'=>'Orden',
-        'created_at'=>'Fecha de creación',
-        'status_priority'=>'Prioritario',
-        'status_feature'=>'Disponible en los destacados',
-        'status_coverPage'=>'Disponible en la página principal',
+        'weighting'=>'Ponderación',
+        'color_class'=>'Color de la categoría',
+        'svg'=>'Icono',
+        'status_hero'=>'Disponible en hero',
+        'status_posts'=>'Disponible en últ. historias',
+        'status_featured'=>'Disponible historias destacadas',
+        'status_projects'=>'Disponible en Proyectos',
+        'status_teams'=>'Disponible en Directivos',
+        'status_workers'=>'Disponible en Equipo',
+        'status_testimonials'=>'Disponible en testimonios',
+        'status_alliances'=>'Disponible en Alianzas',
         'status_pinned'=>'Anclado al inicio de la lista',
-        'status_banned'=>'Baneado',
         'status_active'=>'Activo',
-        'status_published'=>'Publicado'
+        'status_published'=>'Publicado',
+        'status_help'=>'Ayudas',
     ];    
 
     /*INI relaciones entre modelos*/
@@ -48,4 +55,31 @@ class Post extends Model
     {
         return $this->belongsTo(Category::class,'category_id');
     }
+
+    public function scopePublic($query)
+    {
+        return $query->where('posts.status_active',true)->where('posts.status_published',true);
+    } 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

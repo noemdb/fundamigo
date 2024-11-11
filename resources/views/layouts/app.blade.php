@@ -18,7 +18,7 @@
 
         <wireui:scripts />
 
-        @livewireStyles
+        @livewireStyles        
 
     </head>
 

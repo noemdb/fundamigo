@@ -19,9 +19,10 @@ return new class extends Migration
             $table->string('description')->nullable()->comment('Descripción del Post');
             $table->text('body')->comment('Texto');
             $table->string('file_url')->nullable()->comment('Archivo adjunto');
+            $table->text('svg')->nullable()->comment('Icono');
             $table->smallInteger('order')->unsigned()->nullable()->comment('Orden');
             $table->smallInteger('weighting')->unsigned()->nullable()->comment('Ponderación');
-            $table->enum('color_class', ['primary', 'secondary', 'positive', 'negative', 'warning', 'info', 'dark', 'white', 'black', 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose','yellow'])->default('secondary')->comment('Color de la categoría');
+            $table->enum('color_class', ['primary', 'secondary', 'positive','success', 'negative', 'warning', 'info', 'dark', 'white', 'black', 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose','yellow'])->default('secondary')->comment('Color de la categoría');
             $table->boolean('status_hero')->default(false)->nullable()->comment('Disponible en hero');
             $table->boolean('status_posts')->default(false)->nullable()->comment('Disponible en últ. historias');
             $table->boolean('status_featured')->default(false)->nullable()->comment('Disponible historias destacadas');

@@ -16,6 +16,17 @@
     
     @livewireStyles
 
+    <style>
+        .contenido {
+            overflow: hidden;
+            max-height: 3em; /* Ajusta la altura máxima del texto visible */
+            transition: max-height 0.3s ease;
+        }
+        .expandido {
+            max-height: none;
+        }
+    </style>
+
 </head>
 
 <body class="bg-white">

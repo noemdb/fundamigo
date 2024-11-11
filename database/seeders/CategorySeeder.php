@@ -15,6 +15,7 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             // Secciones de Navegación y Presentación
+            //Header, Hero, Posts, Featured, Objectives, Projects, Services, Authority, Testimonials, Alliances, CTA, Contacts, Socials, Login, Gallery, Workers, Timeline, Graphs, Container
             [
                 'name' => 'Header',
                 'descriptions' => 'Cabecera principal y navegación del sitio',
