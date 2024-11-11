@@ -1,4 +1,5 @@
 @extends('layouts.home')
+@section('title') Inicio @endsection
 @section('header') @include('home.header.main') @endsection
 @section('hero') @include('home.hero.main') @endsection
 @section('posts')  @include('home.posts.main') @endsection

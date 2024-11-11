@@ -36,10 +36,10 @@ class AdminUserSeeder extends Seeder
 
         // Crear un usuario Admin
         $adminUser = User::firstOrCreate(
-            ['email' => 'admin@admin.com'],
+            ['email' => 'fundamigo@uefrayluisamigosf.com'],
             [
-                'name' => 'admin',
-                'password' => Hash::make('password'), // Cambia la contraseña en producción
+                'name' => 'fundamigo',
+                'password' => Hash::make('Gem9k5P14ZoX'), // Cambia la contraseña en producción
                 'email_verified_at' => now(),
             ]
         );
